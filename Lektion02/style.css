@@ -1,0 +1,63 @@
+body {
+    color: #a52a2a;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    color: #8a2be2;
+    font-weight: normal;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.intro {
+    background-color: #000000;
+    color: white;
+    font-size: 32px;
+    border: 1px solid #ffa500;
+    font-weight: bold;
+}
+
+#nav {
+    margin-top: 20px;
+    border-bottom: 2px solid #ffa500;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 3em;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+/* Formatera länkar */
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: overline;
+    color: #8a2be2;
+}
+
+a:active {
+    color: #ffa500;
+}
