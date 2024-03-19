@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        .showHide {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>JS Events</h1>
+    <button class="btn btn-success" onclick="showMessage();changeColor();">
+        Visa ett meddelande
+    </button>
+
+    <hr>
+
+    <button id="showHide" class="btn btn-danger" onclick="showHide()">Dölj</button>
+
+    <hr>
+
+    <button class="btn btn-warning" onclick="showTime()">Visa dagens tid</button>
+
+    <div id="demo"></div>
+
+    <script>
+
+        const demoElement = document.getElementById('demo');
+        const demoButton = document.getElementById('showHide');
+
+        function showMessage() {
+            demoElement.innerHTML = "<h2>Hello Events</h2>";
+        }
+
+        function changeColor() {
+            demoElement.classList.toggle('text-danger');
+        }
+
+        function showHide() {
+            demoElement.classList.toggle('showHide');
+            console.log(demoButton);
+            /*
+            if (demoButton.textContent == 'Dölj')
+                demoButton.textContent = "Visa";
+            else
+                demoButton.textContent = "Dölj";
+            */
+
+            demoButton.textContent = (demoButton.textContent == 'Dölj') ? 'Visa' : 'Dölj';
+        }
+
+        function showTime() {
+            demoElement.innerHTML = '<h1>' + new Date().toLocaleTimeString() + '</h1>';
+        }
+
+
+    </script>
+
+</body>
+
+</html>

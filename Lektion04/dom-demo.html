@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demo</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <div id="one">DOM Demo</div>
+
+    <script>
+        document.write("Hello från DOM"); // Används bara vid testning
+        const heading = document.getElementById('one');
+
+        heading.innerHTML = '<h1>Hello from JavaScript</h1>';
+        // heading.textContent = 'Ändring av texten med textContent';
+
+        // Inline CSS med JS
+        //heading.style.backgroundColor = '#000';
+        //heading.style.color = '#FFF';
+
+        // Koplla en CSS-Klass (bättre lösning)
+        heading.classList.add('text-light');
+        heading.classList.add('bg-dark');
+        heading.classList.add('text-danger');
+        heading.classList.remove('text-danger');
+        heading.classList.toggle('text-danger');
+
+        // Dölj ett element
+        heading.style.display = 'none';
+
+        console.log("INFO FROM DOM DEMO");
+        console.log(heading);
+
+
+    </script>
+
+    <script src="script.js"></script>
+    <script>
+        title = "New Title";
+        alert(title);
+    </script>
+</body>
+
+</html>
