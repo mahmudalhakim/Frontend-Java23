@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Demo</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class="container">
+    <h1>Ajax - Demo</h1>
+
+    <button id="loadBtn" class="btn btn-outline-primary">
+        Hämta text via Ajax
+    </button>
+    <hr>
+    <div id="loadTextDiv"></div>
+    <hr>
+    <button id="loadBtnJSON" class="btn btn-outline-success">
+        Hämta JSON via Ajax
+    </button>
+    <hr>
+    <button onclick="changeName()" class="btn btn-danger">Change Name</button>
+    <div id="loadJsonDiv"></div>
+    <hr>
+    <button id="loadBtnApi" class="btn btn-warning mb-2">
+        Hämta data från ett externt API
+    </button>
+    <div id="loadApiDiv"></div>
+    <hr>
+    <h2>Hämta data via jQuery</h2>
+    <div id="jqueryText"></div>
+    <hr>
+    <h2>Hämta Json via jQuery</h2>
+    <div id="jqueryJson"></div>
+    <hr>
+    <br><br><br><br>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="ajax.js"></script>
+</body>
+
+</html>
