@@ -1,0 +1,56 @@
+{
+    "gender": "male",
+    "name": {
+        "title": "Mr",
+        "first": "Goricvit",
+        "last": "Gucal"
+    },
+    "location": {
+        "street": {
+            "number": 2515,
+            "name": "Semenivska"
+        },
+        "city": "Nikopol",
+        "state": "Zaporizka",
+        "country": "Ukraine",
+        "postcode": 96565,
+        "coordinates": {
+            "latitude": "75.4109",
+            "longitude": "-51.9024"
+        },
+        "timezone": {
+            "offset": "+6:00",
+            "description": "Almaty, Dhaka, Colombo"
+        }
+    },
+    "email": "goricvit.gucal@example.com",
+    "login": {
+        "uuid": "43c4c94f-51e5-42a1-9207-3b34ab30cf38",
+        "username": "angrykoala309",
+        "password": "bruiser",
+        "salt": "vh5tiOeJ",
+        "md5": "b19a4cad66b4ce2243c24ee74258f26f",
+        "sha1": "fe4f341824a79861df3e9c1a552924421f309b8c",
+        "sha256": "d6c6d8148d6aac5851f8cbd4b4bc2742681b7c9198ae7d5f2fb30684ac0678d9"
+    },
+    "dob": {
+        "date": "1984-03-15T11:23:48.479Z",
+        "age": 40
+    },
+    "registered": {
+        "date": "2006-07-28T16:45:22.408Z",
+        "age": 17
+    },
+    "phone": "(097) S10-8915",
+    "cell": "(066) B78-1836",
+    "id": {
+        "name": "",
+        "value": null
+    },
+    "picture": {
+        "large": "https://randomuser.me/api/portraits/men/28.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/28.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/28.jpg"
+    },
+    "nat": "UA"
+}

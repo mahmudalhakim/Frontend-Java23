@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User</title>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body class="container">
+    <h1 class="text-primary border-bottom border-primary">Random User</h1>
+
+    <div id="user"></div>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+
+        $.ajax({
+            url: 'https://randomuser.me/api/',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                renderUser(data);
+            }
+        });
+
+        function renderUser(user) {
+            user = user.results[0];
+            const name = user.name.first + ' ' + user.name.last;
+            const image = user.picture.large;
+            const age = user.dob.age;
+            const city = user.location.city;
+            const email = user.email;
+
+            // console.log(JSON.stringify(user));
+            //console.log(name);
+
+
+            let output = `
+            <div class="card" style="width: 18rem;">
+                <img src="${image}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title">${name}</h5>
+                <p class="card-text">Age: ${age}</p>
+                <a href="mailto:${email}" class="btn btn-primary">Contact</a>
+                </div>
+            </div>
+            `;
+
+            document.getElementById('user').innerHTML = output;
+
+        }
+
+    </script>
+</body>
+
+</html>
