@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Demo</title>
+</head>
+<body>
+
+    <div id="productsDiv"></div>
+
+    <script>
+
+        localStorage.setItem('username', 'Mahmud');
+
+        let username = localStorage.getItem('username');
+        console.log(username);
+
+        let book = localStorage.getItem('book'); // Detta är en sträng
+        console.log(book);
+        console.log(book.author); // undefined
+
+        // Konvertera strängen till ett JS-objekt (JSON)
+        book = JSON.parse(book);
+        console.log(book);
+        console.log(book.title);
+        console.log(book.author);
+
+        let products = localStorage.getItem('products');
+        console.log(products); // OBS! Detta är bara en sträng
+
+        products = JSON.parse(products);
+        console.log(products);
+        
+        
+        let output = "";
+        
+        products.forEach(element => {
+            
+            output += element.title + '<br>';
+            output += element.price + '$<hr>';
+            
+        });
+        
+        let productsDiv = document.getElementById('productsDiv');
+        productsDiv.innerHTML = output;
+        
+        
+        const myArray = ['A','B','C'];
+        localStorage.setItem('myArray', JSON.stringify(myArray));
+
+        console.log(  localStorage.getItem('myArray') );
+        console.log( JSON.parse( localStorage.getItem('myArray') ));
+        
+
+    </script>
+</body>
+</html>
